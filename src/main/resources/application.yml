@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/demo?characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 160438
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+server:
+  port: 8181
+shiro-redis:
+  enable: true
+  redis-manager:
+    host: 127.0.0.1:6379
+backend:
+  demoapi:
+    jwt:
+      secret: f4e2e52034348f86b67cde581c0f9eb5
+      expire: 604800
+      header: Authorization
+
+
