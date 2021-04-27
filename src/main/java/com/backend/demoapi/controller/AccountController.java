@@ -56,4 +56,6 @@ public class AccountController {
         SecurityUtils.getSubject().logout();
         return Result.success(null);
     }
+
+    //测试修改
 }
